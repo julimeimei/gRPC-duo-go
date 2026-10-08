@@ -21,8 +21,7 @@ profile.cov
 # vendor/
 
 # Go workspace file
-go.work
-go.work.sum
+# This repository intentionally commits go.work because it is a multi-module portfolio project.
 
 # env file
 .env

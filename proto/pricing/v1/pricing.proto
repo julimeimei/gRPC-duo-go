@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package pricing.v1;
+
+option go_package = "github.com/julimeimei/grpc-duo-go/gen/go/pricing/v1;pricingv1";
+
+service PricingService {
+  rpc GetPrice(GetPriceRequest) returns (GetPriceResponse);
+}
+
+message GetPriceRequest {
+  string product_id = 1;
+}
+
+message GetPriceResponse {
+  string product_id = 1;
+  int64 amount_cents = 2;
+  string currency = 3;
+  int32 discount_percent = 4;
+}

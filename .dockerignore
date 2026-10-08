@@ -1,0 +1,12 @@
+.git
+.env*
+docs/
+**/*.md
+*.log
+*.tmp
+*.exe
+bin/
+dist/
+tmp/
+coverage.out
+**/.DS_Store
